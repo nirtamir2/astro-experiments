@@ -1,4 +1,13 @@
-# Astro Starter Kit: Basics
+# Astro Experiments
+
+## Motivation
+
+I want to add some experiments and code snippets for stuff.
+Like new web API, some Three.js stuff, some new CSS features, quality libraries usage, some common code snippets etc...
+I chose astro because I can combine using multiple frameworks like react (three.js) and solid.js. Also - I want to get
+used to astro stuff.
+
+### Astro
 
 ```
 npm create astro@latest -- --template basics
@@ -11,7 +20,6 @@ npm create astro@latest -- --template basics
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
 
 ## 🚀 Project Structure
 
@@ -31,9 +39,11 @@ Inside your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file
+name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact
+components.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
@@ -52,4 +62,5 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [our documentation](https://docs.astro.build) or jump into
+our [Discord server](https://astro.build/chat).
