@@ -1,0 +1,17 @@
+---
+import {Counter as ReactCounter} from '../components/react/Counter';
+import {Counter as SolidCounter} from '../components/solid/Counter';
+---
+
+<main>
+    <div class="border">
+        <div>React</div>
+        <ReactCounter client:load/>
+    </div>
+    <div class="border">
+        <div>Solid</div>
+        <SolidCounter client:load />
+    </div>
+</main>
+
+
