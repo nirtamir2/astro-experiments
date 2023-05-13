@@ -4,13 +4,21 @@ import {Counter as SolidCounter} from '../components/solid/Counter';
 ---
 
 <main>
+    <div>
+        Notice that in this demo we import stuff in the layout with `---` astro syntax.
+        Then in order to load stuff and add interactivity we add client:load directive.
+
+    </div>
     <div class="border">
-        <div>React</div>
+
+        <div class="text-xl">React</div>
+        <div class="text-sm">Notice the /** @jsxImportSource react */ at the start of the file</div>
         <ReactCounter client:load/>
     </div>
     <div class="border">
-        <div>Solid</div>
-        <SolidCounter client:load />
+        <div class="text-xl">Solid.js</div>
+        <div class="text-sm">Notice the /** @jsxImportSource solid-js */ at the start of the file</div>
+        <SolidCounter client:load/>
     </div>
 </main>
 
