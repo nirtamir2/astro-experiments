@@ -1,25 +1,26 @@
 ---
-import {Counter as ReactCounter} from '../components/react/Counter';
-import {Counter as SolidCounter} from '../components/solid/Counter';
+import { Counter as ReactCounter } from "../components/react/Counter";
+import { Counter as SolidCounter } from "../components/solid/Counter";
 ---
 
 <main>
-    <div>
-        Notice that in this demo we import stuff in the layout with `---` astro syntax.
-        Then in order to load stuff and add interactivity we add client:load directive.
-
+  <div>
+    Notice that in this demo we import stuff in the layout with `---` astro
+    syntax. Then in order to load stuff and add interactivity we add client:load
+    directive.
+  </div>
+  <div class="border">
+    <div class="text-xl">React</div>
+    <div class="text-sm">
+      Notice the /** @jsxImportSource react */ at the start of the file
     </div>
-    <div class="border">
-
-        <div class="text-xl">React</div>
-        <div class="text-sm">Notice the /** @jsxImportSource react */ at the start of the file</div>
-        <ReactCounter client:load/>
+    <ReactCounter client:load />
+  </div>
+  <div class="border">
+    <div class="text-xl">Solid.js</div>
+    <div class="text-sm">
+      Notice the /** @jsxImportSource solid-js */ at the start of the file
     </div>
-    <div class="border">
-        <div class="text-xl">Solid.js</div>
-        <div class="text-sm">Notice the /** @jsxImportSource solid-js */ at the start of the file</div>
-        <SolidCounter client:load/>
-    </div>
+    <SolidCounter client:load />
+  </div>
 </main>
-
-
